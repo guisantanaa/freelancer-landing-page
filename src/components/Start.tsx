@@ -1,15 +1,10 @@
-import Button from './Button';
+import Button, { handleClick } from './Button';
 import Banner from '../assets/banner.png';
 
 const Start = () => {
-  const handleClick = () => {
-    window.location.href =
-      'https://api.whatsapp.com/send?phone=5577988080660&text=';
-  };
-
   return (
     <section
-      className="py-32 text-green-300 font-bold flex items-center max-w-7xl m-auto max-[768px]:flex-col-reverse"
+      className="py-16 justify-center gap-12 text-textColor-300 font-bold flex items-center max-w-7xl m-auto max-[768px]:flex-col-reverse max-[768px]:py-32"
       id="Início"
     >
       <div className="text-center w-[30rem] m-12 max-[768px]:w-auto max-[768px]:m-5">
@@ -23,7 +18,7 @@ const Start = () => {
         <Button onClick={handleClick} label="Agendar um sessão" />
       </div>
 
-      <div className="m-12 max-[768px]:m-0">
+      <div className="m-10 mt-16 max-[768px]:m-0 max-[768px]:mt-4">
         <img src={Banner} alt="Banner Inicial" />
       </div>
     </section>

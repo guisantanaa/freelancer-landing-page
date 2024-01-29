@@ -8,16 +8,19 @@ module.exports = {
       },
       colors: {
         primary: {
-          500: '#f2eae7',
+          500: '#F2F2EF',
         },
         green: {
-          300: '#1f473d',
-          500: '#16433c',
+          300: '#D4E3C6',
+          500: '#D4E3C6',
         },
         brown: {
           300: '#aa825b',
           500: '#a2754b',
         },
+        textColor: {
+          300: '#330E3C'
+        }
       },
     },
   },

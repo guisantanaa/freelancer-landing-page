@@ -7,9 +7,9 @@ const Header = () => {
 
   const handleToggle = () => setToggle(!toggle);
   return (
-    <header className="flex justify-between items-center px-5 py-2 bg-primary text-black fixed w-full z-10 h-20 bg-primary-500">
-      <a href="/" className="logo mt-3">
-        <img className="max-[600px]:w-48" src={Logo} alt="logo" />
+    <header className="flex justify-between items-center px-5 py-2 bg-primary text-black fixed w-full z-10 h-20 bg-green-500">
+      <a href="/" className="logo">
+        <img className="max-[600px]:w-32 px-0" src={Logo} alt="logo" />
       </a>
       {/* Desktop Nav */}
       <nav className="hidden md:block transition">
@@ -37,7 +37,7 @@ const Header = () => {
         className={
           !toggle
             ? 'mobile-nav left-[-100%]'
-            : 'mobile-nav left-0 text-center text-3xl font-bold text-green-300'
+            : 'mobile-nav left-0 text-center text-3xl font-bold text-[#330E3C]'
         }
       >
         <ul className="flex flex-col gap-16 py-20">
